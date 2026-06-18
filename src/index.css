@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Custom palette matching 'naranja, negro, blanco' and Bold Typography #FF6321 scale */
+  --color-chapa-orange: #FF6321;
+  --color-chapa-orange-hover: #e04a0e;
+  --color-chapa-black: #0c0c0e;
+  --color-chapa-dark-gray: #f4f3f0;
+  --color-chapa-gray: #eadecf;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #ffffff;
+  color: var(--color-chapa-black);
+  overflow-x: hidden;
+}
+
+/* Custom styles for high-fidelity interactive flow card shadows */
+.chapa-neon-shadow {
+  box-shadow: 0 10px 40px rgba(255, 99, 33, 0.08);
+}
+
+.chapa-neon-glow {
+  text-shadow: 0 0 15px rgba(255, 99, 33, 0.2);
+}
+
+/* Custom layout enhancements for Chapa Bold Typography */
+.border-b-bold {
+  border-bottom: 3px solid #FF6321;
+}
+
+/* Smooth custom scrollbar for digital experience vibe */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  background: #e5e5e0;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-chapa-orange);
+}
+
+
